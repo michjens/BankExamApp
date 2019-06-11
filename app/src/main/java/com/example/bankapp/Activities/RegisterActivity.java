@@ -11,6 +11,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ProgressBar;
 
+import com.example.bankapp.Helpers.CurrentUser;
 import com.example.bankapp.R;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
@@ -32,9 +33,9 @@ public class RegisterActivity extends AppCompatActivity {
 
     private EditText userEmail, userPassword, userPassword2, userName, userAge, userZipcode;
     private ProgressBar loadingProg;
-    private Button registerBtn, loginBtn;
+    private Button registerBtn;
     private FirebaseAuth mAuth;
-    HashMap userDetails;
+    CurrentUser currentUser;
 
 
     @Override
@@ -66,14 +67,15 @@ public class RegisterActivity extends AppCompatActivity {
                     registerBtn.setVisibility(View.VISIBLE);
                     loadingProg.setVisibility(View.INVISIBLE);
                 }else{
-                    userDetails.put("name", name);
-                    userDetails.put("age", age);
-                    userDetails.put("Zipcode", zipcode);
-                    userDetails.put("Budget", "true");
-                    userDetails.put("Default", "true");
-                    userDetails.put("Business", "false");
-                    userDetails.put("Savings", "false");
-                    userDetails.put("Pension", "false");
+                    currentUser.setmName(name);
+                    currentUser.setmMail(email);
+                    currentUser.setmAge(age);
+                    currentUser.setmZipcode(zipcode);
+                    currentUser.setmBudget("true");
+                    currentUser.setmDefault("true");
+                    currentUser.setmBusiness("false");
+                    currentUser.setmSavings("false");
+                    currentUser.setmPension("false");
                     createUserAcc(email, name, password);
                     Map<String, Object> userSave = new HashMap<>();
                     userSave.put("name", name);
@@ -124,16 +126,14 @@ public class RegisterActivity extends AppCompatActivity {
 
     }
 
-    private void updateInfo(String name, FirebaseUser currentUser) {
+    private void updateInfo(String name, final FirebaseUser userReg) {
         UserProfileChangeRequest profileUpdate = new UserProfileChangeRequest.Builder().setDisplayName(name).build();
-        currentUser.updateProfile(profileUpdate).addOnCompleteListener(new OnCompleteListener<Void>() {
+        userReg.updateProfile(profileUpdate).addOnCompleteListener(new OnCompleteListener<Void>() {
             @Override
             public void onComplete(@NonNull Task<Void> task) {
                 if(task.isSuccessful()){
                     showMessage(getApplicationContext(), "User registration complete");
-                    Intent register = new Intent(getApplicationContext(), HomeActivity.class);
-                    register.putExtra("userDetails", userDetails);
-                    startActivity(register);
+                    updateUI(RegisterActivity.this, HomeActivity.class, currentUser);
 
 
 
@@ -154,8 +154,8 @@ public class RegisterActivity extends AppCompatActivity {
         loadingProg = findViewById(R.id.progressBar);
         registerBtn = findViewById(R.id.regBtn);
         mAuth = FirebaseAuth.getInstance();
-        loginBtn = findViewById(R.id.logBtn);
-        userDetails = new HashMap<String, String>();
+
+
 
     }
 }

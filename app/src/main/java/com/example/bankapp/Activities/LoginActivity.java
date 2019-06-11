@@ -72,7 +72,8 @@ public class LoginActivity extends AppCompatActivity {
         btnReg.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent register = new Intent(getApplicationContext(), RegisterActivity.class);
+                Intent intent = new Intent(getApplicationContext(), RegisterActivity.class);
+                startActivity(intent);
             }
         });
 
@@ -135,14 +136,6 @@ public class LoginActivity extends AppCompatActivity {
                                 if ((long) documentSnapshot.get(nemID.getText().toString()) == Long.parseLong(nemIDpassword.getText().toString())) {
                                     Intent successfulLogin = new Intent(getApplicationContext(), HomeActivity.class);
 
-                                   /* userDetails.put("name", documentSnapshot.getString("name"));
-                                    userDetails.put("age", documentSnapshot.getString("age"));
-                                    userDetails.put("Zipcode", documentSnapshot.get("Zipcode"));
-                                    userDetails.put("Budget", documentSnapshot.getString("Budget"));
-                                    userDetails.put("Default", documentSnapshot.getString("Default"));
-                                    userDetails.put("Business", documentSnapshot.getString("Business"));
-                                    userDetails.put("Savings", documentSnapshot.getString("Savings"));
-                                    userDetails.put("Pension", documentSnapshot.getString("Pension"));*/
                                     CurrentUser currentUser = new CurrentUser(documentSnapshot.getString("name"),
                                             documentSnapshot.getString("age"),
                                             documentSnapshot.getString("Zipcode"),
