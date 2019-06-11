@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context=".Activities.Acc1Activity"
+    android:background="#ffffff">
+
+
+    <include layout="@layout/activity_bottom_nav_helper_home" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="374dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="64dp"
+        android:background="@drawable/btn_selected"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/acc1"
+            android:layout_width="219dp"
+            android:layout_height="50dp"
+            android:background="@drawable/btn_selected"
+            android:fontFamily="monospace"
+            android:text="@string/acc1"
+            android:textColor="#ffffff"
+            android:textSize="23sp" />
+
+        <TextView
+            android:id="@+id/balance"
+            android:layout_width="match_parent"
+            android:layout_height="68dp"
+            android:background="@drawable/btn_selected"
+            android:fontFamily="monospace"
+            android:gravity="end"
+            android:text="@string/acc1amount"
+            android:textColor="#ffffff"
+            android:textSize="23sp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="361dp"
+        android:layout_height="382dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="44dp"
+        android:orientation="vertical"
+        android:background="@drawable/border_account"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+        <TextView
+            android:id="@+id/trans1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/white_grey_border"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:gravity="right"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/trans2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/white_grey_border"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:gravity="right"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/trans3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/white_grey_border"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:gravity="right"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/trans4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/white_grey_border"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:gravity="right"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/trans5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/white_grey_border"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:gravity="right"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/trans6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/white_grey_border"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:gravity="right"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/trans7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/white_grey_border"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:gravity="right"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/trans8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/white_grey_border"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:gravity="right"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/trans9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/white_grey_border"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:gravity="right"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/trans10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/white_grey_border"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:gravity="right"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/trans11"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/white_grey_border"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:gravity="right"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/trans12"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/white_grey_border"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:gravity="right"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/trans13"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/white_grey_border"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:gravity="right"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/trans14"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/white_grey_border"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:gravity="right"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/trans15"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/white_grey_border"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:gravity="right"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/trans16"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/white_grey_border"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:gravity="right"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/trans17"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/white_grey_border"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:gravity="right"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/trans18"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/white_grey_border"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:gravity="right"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/trans19"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/white_grey_border"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:gravity="right"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/trans20"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/white_grey_border"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:gravity="right"
+            android:text="TextView" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+

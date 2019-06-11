@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.TransferActivity">
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/activity_bottom_nav_helper_home" />
+
+    <TextView
+        android:id="@+id/myTransferOverview"
+        android:layout_width="296dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="Transfer"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.232"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/include"
+        app:layout_constraintVertical_bias="0.9" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="350dp"
+        android:layout_height="325dp"
+        android:layout_marginTop="104dp"
+        android:background="@drawable/btn_selected"
+
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/include">
+
+        <TextView
+            android:id="@+id/fromTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:text="From"
+            android:textColor="#ffffff" />
+
+        <Spinner
+            android:id="@+id/spinnerFrom"
+
+            android:layout_width="match_parent"
+            android:layout_height="41dp"
+            android:layout_marginBottom="5dp"
+            android:spinnerMode="dropdown"
+            android:textColor="#ffffff" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:text="To"
+            android:textColor="#ffffff" />
+
+        <Spinner
+            android:id="@+id/spinnerTo"
+            android:layout_width="match_parent"
+            android:layout_height="41dp"
+
+            android:layout_marginBottom="5dp" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="When"
+            android:textColor="#ffffff" />
+
+        <Spinner
+            android:id="@+id/spinnerWhen"
+            android:layout_width="match_parent"
+            android:layout_height="41dp"
+            android:layout_marginBottom="5dp" />
+
+        <EditText
+            android:id="@+id/amountTransfer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/reg_edittext_style"
+            android:ems="10"
+            android:hint="Amount"
+            android:inputType="number" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/regTransfer"
+                android:layout_width="158dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/reg_edittext_style"
+                android:ems="10"
+                android:hint="Reg"
+                android:inputType="number" />
+
+            <EditText
+                android:id="@+id/accTransfer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/reg_edittext_style"
+                android:ems="10"
+                android:hint="Account"
+                android:inputType="number" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/transferBtn"
+        android:layout_width="158dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/reg_btn_style"
+        android:text="Transfer"
+        android:textColor="#ffffff"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
+
+    <ProgressBar
+        android:id="@+id/loginProg"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/transferBtn"
+        app:layout_constraintEnd_toEndOf="@+id/transferBtn"
+        app:layout_constraintStart_toStartOf="@+id/transferBtn"
+        app:layout_constraintTop_toTopOf="@+id/transferBtn" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

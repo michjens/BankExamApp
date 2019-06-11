@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">BankApp</string>
+    <string name="acc1">Budget</string>
+    <string name="acc2">Default</string>
+    <string name="acc3">Business</string>
+    <string name="acc4">Savings</string>
+    <string name="acc5">Pension</string>
+    <string name="acc1amount">0.00</string>
+    <string name="acc2amount">0.00</string>
+    <string name="acc3amount">0.00</string>
+    <string name="acc4amount">0.00</string>
+    <string name="acc5amount">0.00</string>
+    <string name="myOverview">My overview</string>
+    <string name="title_activity_home">Home</string>
+    <string name="title_activity_profile">Profile</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="hello_home_fragment">home_frag</string>
+    <string name="hello_profile_fragment">profile_frag</string>
+    <string name="hello_settings_fragment">settings_frag</string>
+    <string name="title_activity_bottom_nav_helper">BottomNavHelper</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_activity_maps">Map</string>
+</resources>

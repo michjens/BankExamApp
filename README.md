@@ -1,1 +1,2 @@
-# BankExamApp
+# BankApp
+KEA Bank android app

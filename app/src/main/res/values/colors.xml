@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#2a36b2</color>
+    <color name="colorPrimaryDark">#2a36b2</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="colorPressed">#2A5CB2</color>
+
+    <item name="colorPrimaries" type="color">#2a36b2</item>
+    <item name="colorPresses" type="color">#6BC8FF</item>
+    <item name='colorGrey' type="color">#c3c3c3</item>
+
+    <integer-array name="androidcolors">
+        <item>@color/colorPrimaries</item>
+        <item>@color/colorPresses</item>
+    </integer-array>
+</resources>
